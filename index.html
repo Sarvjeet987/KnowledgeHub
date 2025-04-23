@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a7efd596ac.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Smart Education </title>
+    
+</head>
+
+<body>
+    <!-- nav section -->
+    <div class="navbar" id="home">
+        <div class="left">
+            <a href="/index.html"><img src="logo1.png" alt="logo" id="#home"></a>
+        </div>
+        <div class="right">
+            <ul id="dropdown">
+                <li><a href="#" class="Home">Home</a></li>
+                <li class="sub-dropdown-wraper"><a href="#" class="QCD">Question Paper <i
+                            class="fas fa-caret-down"></i></a>
+
+                    <!-- <ul class="sub-dropdown">
+                        <li><a href="#">CSVTU</a></li>
+                        <li><a href="#">LPU</a></li>
+                        <li><a href="#">HGU</a></li>
+                        <li><a href="#">CU</a></li>
+                        <li><a href="#">LUPP</a></li>
+                        <li><a href="#">CSVTU</a></li>
+                        <li><a href="#">LPU</a></li>
+                        <li><a href="#">HGU</a></li>
+                        <li><a href="#">CU</a></li>
+                        <li><a href="#">LUPP</a></li>
+                    </ul> -->
+                </li>
+                <li><a href="#compatetive" class="QCD">Competitive Exam </i></a></li>
+                <li><a href="#down" class="QCD">Downlode</a></li>
+                <li><a href="/contact.html" class="QCD" target="_blank">Contact Us</a></li>
+                <li><a href="/login.html" class="login">Login</a></li>
+            </ul>
+        </div>
+        <div class="menu-icon" id="faMenu"><i class="fa-solid fa-bars"></i></div>
+    </div>
+    <div class="hero-section">
+        <img src="homeimg.png" alt="pic" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+    </div>
+    <!-- end nav section -->
+    <!--select section-->
+    <div class="select-option" data-aos="fade-up" data-aos-duration="3000">
+        <div class="select-unvrsty">
+            <select name="uni-slug" id="uni-list" required="turu">
+                <option value>--Select University--</option>
+                <option value="CSVTU">CSVTU</option>
+                <option value="LPU">LPU</option>
+                <option value="PTU">PTU</option>
+                <option value="PU">PU</option>
+                <option value="PU-PATIALA">PU-PATIALA</option>
+                <option value="BFUHS">BFUHS</option>
+                <option value="MRSPTU">MRSPTU</option>
+                <option value="BSEH">BSEH</option>
+                <option value="MRSPTU">UBSE</option>
+                <option value="MRSPTU">GNDU</option>
+                <option value="MRSPTU">PSEB</option>
+                <option value="MRSPTU">CBSE</option>
+                <option value="MRSPTU">HPTSB</option>
+            </select>
+        </div>
+        <div class="select-course">
+            <select name="course-slug" id="course-list" required="turu">
+                <option value>--Select Courses--</option>
+                <option value="btech">B.Tech</option>
+                <option value="btech">BE</option>
+                <option value="bsc">B.SC</option>
+                <option value="dip">Diploma</option>
+                <option value="mtech">M.Tech</option>
+                <option value="bpharma">B.Pharma</option>
+                <option value="dpharma">D.Pharma</option>
+                <option value="llb">LLB</option>
+                <option value="llb">M.ba</option>
+                <option value="llb">M.ca</option>
+                <option value="llb">BA</option>
+                <option value="llb">B.com</option>
+                <option value="llb">B.SC</option>
+                <option value="llb">MBBS</option>
+                <option value="llb">Polytechnique</option>
+                <option value="llb">ITI</option>
+                <option value="llb">12th-Science</option>
+                <option value="llb">12th-Arts</option>
+                <option value="llb">12th-Commers</option>
+                <option value="llb">10th</option>
+
+            </select>
+        </div>
+        <div class="select-Stream">
+            <select name="stream-slug" id="stream-list" required="turu">
+                <option value>--Select Stream--</option>
+                <option value="cse">CSE</option>
+                <option value="mech">Mechanical</option>
+                <option value="civil">civil</option>
+                <option value="et">ET</option>
+                <option value="bpharma">Pharmecy</option>
+                <option value="dpharma">Agriculture</option>
+                <option value="llb">Sciences</option>
+                <option value="llb">Arts</option>
+                <option value="llb">Commers</option>
+                <option value="llb">CSE-Core</option>
+                <option value="llb">CSE-AI</option>
+                <option value="llb">CSE-AIML</option>
+                <option value="llb">CSE-Data science</option>
+                <option value="llb">CSE-Syber security</option>
+                <option value="llb"></option>
+            </select>
+        </div>
+        <div class="search-btn">
+            <button>Search</button>
+        </div>
+    </div>
+    <!--end select section-->
+
+
+    <!-- University list secion -->
+    <div class="uni-name">
+        <h1 class="text" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Available
+            <span>Universities</span>
+        </h1>
+        <div class="line"></div>
+        <div class="top" data-aos="fade-up" data-aos-duration="3000">
+            <div class="uni-1">
+                <img src="/T-1-ptu.jpg" alt="img">
+                <h3>PTU</h3>
+                <p>Punjab Technical University</p>
+                <div class="line"></div>
+            </div>
+            <div class="uni-2">
+                <img src="/T-2-pu.jpg" alt="img">
+                <h3>PU</h3>
+                <p>Panjab University Chandigarh</p>
+                <div class="line"></div>
+            </div>
+            <div class="uni-3">
+                <img src="/T-3_pu-patiala.jpg" alt="img">
+                <h3>PU-PATIALA</h3>
+                <p>Punjabi University Patiala</p>
+                <div class="line"></div>
+            </div>
+            <div class="uni-4">
+                <img src="/T-4-psbte-logo.jpg" alt="img">
+                <h3>PSBTE</h3>
+                <p>Punjab State Board of Technical Education </p>
+                <div class="line"></div>
+            </div>
+            <div class="uni-5">
+                <img src="/T-5-BFUHS.jpg" alt="img">
+                <h3>BFUHS</h3>
+                <p>Baba Farid University of Health Sciences</p>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="mid" data-aos="fade-up" data-aos-duration="3000">
+            <div class="uni-1">
+                <img src="M-1mrsptu.png" alt="img">
+                <h3>MRSPTU</h3>
+                <p>Maharaja Ranjit Singh Punjab Technical University</p>
+                <div class="line"></div>
+            </div>
+            <div class="uni-2">
+                <img src="/M-2hbse-logo.png" alt="img">
+                <h3>BSEH</h3>
+                <p>Board of School Education Haryana</p>
+                <div class="line"></div>
+            </div>
+            <div class="uni-3">
+                <img src="M-4logo-ubse.png" alt="img">
+                <h3>UBSE</h3>
+                <p>Uttarakhand Board of School Education</p>
+                <div class="line"></div>
+            </div>
+            <div class="uni-4">
+                <img src="/M-3gndu.jpg" alt="img">
+                <h3>GNDU</h3>
+                <p>Guru Nanak Dev University</p>
+                <div class="line"></div>
+            </div>
+            <div class="uni-5">
+                <img src="/csvtu.jpg" alt="img">
+                <h3>CSVTU</h3>
+                <p>Chhattisgarh Swami Vivekanand Technical University</p>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="bottom" data-aos="fade-up" data-aos-duration="3000">
+            <div class="uni-1">
+                <img src="/B-1-pseb.png" alt="img">
+                <h3>PSEB</h3>
+                <p>Punjab School Education Board</p>
+                <div class="line"></div>
+            </div>
+            <div class="uni-2">
+                <img src="/B-2-cbse.jpg" alt="img">
+                <h3>CBSE</h3>
+                <p>Central Board of School Education</p>
+                <div class="line"></div>
+            </div>
+            <div class="uni-3">
+                <img src="/B-3-hptsb.jpg" alt="img">
+                <h3>HPTSB</h3>
+                <p>Himachal Pradesh Takniki Shiksha Board</p>
+                <div class="line"></div>
+            </div>
+            <div class="uni-4">
+                <img src="/B-4gtu.jpg" alt="img">
+                <h3>GTU</h3>
+                <p>Gujarat Technological University</p>
+                <div class="line"></div>
+            </div>
+            <div class="uni-5">
+                <img src="/B-5mdu.jpg" alt="img">
+                <h3>MDU</h3>
+                <p>Maharshi Dayanand University Rohtak</p>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end University list secion -->
+    <!-- we offer section -->
+    <div class="we-offer" id="down">
+        <h1 class="text" data-aos="zoom-in-up">We <span>offer</span></h1>
+        <div class="line"></div>
+        <div class="box" data-aos="fade-up" data-aos-duration="3000">
+            <div class="left">
+                <i class="fa-solid fa-circle-question" style="color: #63E6BE;"></i>
+                <h1>Question Papers</h1>
+                <p>Available all Universities question paper</p>
+                <button>Explore</button>
+            </div>
+            <div class="mid-1">
+                <i class="fa-solid fa-user-pen" style="color: #63E6BE;"></i>
+                <h1>Solved Q. Papers</h1>
+                <p>Solved question papers of CSVTU</p>
+                <button>Explore</button>
+            </div>
+            <div class="mid-2">
+                <i class="fa-solid fa-circle-down fa-spin fa-spin-reverse" style="color: #63E6BE;"></i>
+                <h1>Download Q. Papers</h1>
+                <p>Download all available university and colleges question papers. </p>
+                <button>Download</button>
+            </div>
+            <div class="right">
+                <i class="fa-solid fa-list" style="color: #63E6BE;"></i>
+                <h1>Institutions List</h1>
+                <p>List of colleges and university and contact details</p>
+                <button>Explore</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- end we offer section -->
+    <!-- short section -->
+    <div class="main" data-aos="fade-up" data-aos-duration="3000">
+        <div class="box-1">
+            <img src="/book.png" alt="img">
+            <h1>Upload Question papers</h1>
+            <h3>Read More <i class="fa-solid fa-arrow-right" style="color: #003ceb;"></i></h3>
+        </div>
+        <div class="box-2">
+            <img src="/graduate.png" alt="img">
+            <h1>Our Contributors</h1>
+            <h3>Read More <i class="fa-solid fa-arrow-right" style="color: #003ceb;"></i></h3>
+        </div>
+        <div class="box-3">
+            <img src="/online.png" alt="img">
+            <h1>Become Volunteer</h1>
+            <h3>Read More <i class="fa-solid fa-arrow-right" style="color: #003ceb"></i></h3>
+        </div>
+    </div>
+    <!-- end short section -->
+    <!-- Contributors section -->
+    <div class="contrbtr">
+        <h1>Become a <span>Contributor</span> by uploding question paper</h1>
+        <p>Check our contributor list</p>
+    </div>
+    <!--end  Contributors section -->
+    <!-- testimonials -->
+    <div class="testimonials" id="contributer" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+        <h1>Testimonials</h1>
+        <i class="icon-1 fa fa-quote-right text-theme-colored2 font-24 mt-20"></i>
+        <p>Lorem ipsum dolor sit unde sequi vel. Id coassumenda explicabo odio saepe culpa quae vel, aliquam, molestias
+            voluptas.</p>
+        <h3>Sarvjeet kumar Singh</h3>
+        <i class="fa-solid fa-circle" style="color: rgba(187, 180, 180, 0.9)"></i>
+        <i class="fa-solid fa-circle" style="color: rgba(30, 49, 72, .9)"></i>
+        <i class="fa-solid fa-circle" style="color: rgba(187, 180, 180, 0.9)"></i>
+    </div>
+
+    <!-- end testimonials -->
+    <!-- data section -->
+    <div class="data" id="list" data-aos="fade-up" data-aos-duration="3000">
+        <h1>Explore all data</h1>
+        <div class="line"></div>
+        <div class="ptu">
+            <h3>PTU</h3>
+            <p class="ptu-1">B-TECH || BBA || BCA || BCOM || BSC-IT || M-TECH || MBA || MCA || BSC-AGRI || BAMT || BHMCT
+                || BTTM || BSC-MLS || BVOC-WTM</p>
+        </div>
+        <div class="ptu">
+            <h3>PSBTE</h3>
+            <p class="psbte">DIPLOMA || ME</p>
+        </div>
+        <div class="ptu">
+            <h3>BFUHS</h3>
+            <p class="bfuhs">B-TECH || BBA || BCA || BCOM || BSC-IT || M-TECH || MBA || MCA || BSC-AGRI</p>
+        </div>
+        <div class="ptu">
+            <h3>PSEB(School)</h3>
+            <p class="pseb">10th || 12th</p>
+        </div>
+        <div class="ptu">
+            <h3>CBSE</h3>
+            <p class="mul">10th || 12th</p>
+        </div>
+        <div class="ptu">
+            <h3>HPTSB</h3>
+            <p class="mil-1">DIPLOMA</p>
+        </div>
+        <div class="ptu">
+            <h3>GTU</h3>
+            <p class="gtu">BA || BE || BHMCT || BPLAN || BPHARM || DARCH || DPHARM || MCAI || Diploma || MCA</p>
+        </div>
+        <div class="ptu">
+            <h3>PTU DISTANCE EDUCATION</h3>
+            <p class="distance">BCA || BSC-IT || MCA || MSC-IT</p>
+        </div>
+        <div class="ptu">
+            <h3>BSEH</h3>
+            <p class="mul">10th || 12th</p>
+        </div>
+        <div class="ptu">
+            <h3>UBSE</h3>
+            <p class="mul">10th || 12th</p>
+        </div>
+        <div class="ptu">
+            <h3>GNDU</h3>
+            <p class="mul">BCOM || BCA || BBA || LLB</p>
+        </div>
+        <div class="ptu">
+            <h3>PU-PATIALA</h3>
+            <p class="pati">BCA || BBA || MBA || MCOM || BOOM || BCOM-HONS || BSC-NM || BA B.EDU || BSC-AGRI || </p>
+        </div>
+        <div class="ptu">
+            <h3>CSVTU</h3>
+            <p class="csvtu">BCA || BBA || MBA || MCOM || B.TECH || M.TECH || PHD || B-PHARMA || D-PHARMA || BE || UG ||
+                PG || DIPLOMA </p>
+        </div>
+    </div>
+
+    <!-- end data -->
+    <!-- competative-exam section -->
+    <div class="c-exam" id="compatetive" data-aos="fade-up" data-aos-duration="3000">
+        <h1>Search <span>Competitive</span> Exams</h1>
+        <div class="line"></div>
+        <img src="/search_s0xf.png" alt="img">
+        <div class="text">
+            <select name="competative-exam" id="competative-exam" required="true">
+                <option value>--Competative Exam--</option>
+                <option value="cse">SSC CHSL</option>
+                <option value="mech">SSC GD</option>
+                <option value="civil">SSC Stenographer</option>
+                <option value="et">SSC MTS</option>
+                <option value="bpharma">NDA and ΝΑ</option>
+                <option value="dpharma">AIIMS & NEET</option>
+                <option value="llb">JEE Main</option>
+                <option value="llb">Advance</option>
+                <option value="llb">Nimcet</option>
+                <option value="llb">Gate</option>
+                <option value="llb">Cat</option>
+            </select>
+            <button>Search</button>
+
+
+        </div>
+    </div>
+    <!--  endcompetative-exam section-->
+    <!-- footer -->
+    <div class="footer" id="footer">
+        <div class="top-footer">
+            <div class="box-1">
+                <img src="/footer_logo.png" alt="img" data-aos="flip-up">
+                <p>KnowledgeHub is founded by a small team of engineer in 2025, who had the dream of digitalizing study
+                    material for University students. Regular course, we aim to add all universities of India.</p>
+            </div>
+            <div class="box-2">
+                <h1>Other Links</h1>
+                <div class="line"></div>
+                <ul>
+                    <a href="/contact.html" target="_blank">
+                        <li>Contact Us</li>
+                    </a>
+                    <a href="#home">
+                        <li>About Us</li>
+                    </a>
+                    <a href="#contributer">
+                        <li>Contributors</li>
+                    </a>
+                    <a href="#down">
+                        <li>Download</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="box-3">
+                <h1>Important Links</h1>
+                <div class="line"></div>
+                <ul>
+                    <li>Upload</li>
+                    <li>Datesheets</li>
+                    <a href="#list">
+                        <li>Institution lists</li>
+                    </a>
+                    <li>Syllabus</li>
+                </ul>
+            </div>
+            <div class="box-4">
+                <h1>Contact Us</h1>
+                <div class="line"></div>
+                <i class="fa-regular fa-envelope" style="color: #0a438e;"></i>
+                <a href="#">
+                    <p>helpknowledgehub@gmail.com</p>
+                </a>
+                <div class="soc-icon" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                    <i class="fa-brands fa-facebook" style="color: #0a438e;"></i>
+                    <i class="fa-brands fa-instagram" style="color: #0a438e;"></i>
+                    <i class="fa-solid fa-x" style="color: #0a438e;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="left">Copyright ©2024 KnowledgeHub. All Rights Reserved</div>
+            <div class="right">
+                <pre>Support | Disclaimer | Privacy Policy </pre>
+            </div>
+        </div>
+    </div>
+    <!-- end footer -->
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        $(document).ready(function () {
+            if (window.innerWidth < 767) {
+                $("#faMenu").click(function () {
+                    $("#dropdown").slideToggle();
+                })
+                $("#dropdown li").click(function () {
+                    $("#dropdown").slideUp();
+                })
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="contact.css"> -->
+     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a7efd596ac.js" crossorigin="anonymous"></script>
+    <title>Contact Us !</title>
+</head>
+<body>
+    <!-- nav -->
+    <div class="navbar" id="home">
+        <div class="left">
+            <a href="/index.html"><img src="logo1.png" alt="logo"></a>
+        </div>
+        <div class="right">
+            <ul id="dropdown">
+                <li><a href="/index.html" class="Home">Home</a></li>
+                <li class="sub-dropdown-wraper"><a href="#" class="QCD">Question Paper <i
+                            class="fas fa-caret-down"></i></a></li>
+                <li><a href="/index.html#compatetive" class="QCD">Competitive Exam</a></li>
+                <li><a href="/index.html#down" class="QCD">Downlode</a></li>
+                <li><a href="/contact.html" class="QCD" target="_blank">Contact Us</a></li>
+                <li><a href="/login.html" class="login">Login</a></li>
+            </ul>
+        </div>
+        <div class="menu-icon" id="faMenu"><i class="fa-solid fa-bars"></i></div>
+    </div>
+
+      <!-- end  nav -->
+       <!--contact-->
+      
+    <div class="contact">
+        <h1>Contact Us</h1>
+        <p>If you have any query please feel free to contact us and we shall get in touch with as soon as possible. OR send an email at helpknowledgehub@gmail.com</p>
+        <div class="left-right-main">
+            <div class="left">
+                <div class="in-left-1">
+                 <div class="a-icon"><i class="fa-solid fa-location-dot" style="color: #63E6BE;"></i></div>
+                 <div class="address-text">
+                     <h1>Address</h1>
+                     <p class="add">Bhilai , Chhattisgarh</p>
+                 </div>
+                </div>
+                <div class="in-left-2">
+                 <div class="p-icon"><i class="fa-solid fa-phone-volume fa-fade" style="color: #63E6BE;"></i></div>
+                 <div class="phone-text">
+                     <h1>Phone</h1>
+                     <p>+91 8651465896</p>
+                 </div>
+                </div>
+                <div class="in-left-3">
+                 <div class="E-icon"><i class="fa-solid fa-envelope" style="color: #63E6BE;"></i></div>
+                 <div class="Email-text">
+                     <h1>Email</h1>
+                     <p>helpknowledgehub@gmail.com</p></div>
+                </div>
+             </div>
+             <div class="right">
+                 <h1>Send Message</h1>
+                 <form action="" method="post">
+                    <div class="chek">
+                        <label for="student">Student:</label><input type="radio" name="st" class="checkbox" id="student">
+                        <label for="teacher">Teacher:</label><input type="radio" name="st" class="checkbox" id="teacher">
+                       </div>
+                        <div class="full-name">
+                           <input type="name" placeholder="Full name" >
+                        </div>
+                        <div class="email">
+                           <input type="name" placeholder="Email">
+                        </div>
+                        <div class="msg">
+                           <input type="name" placeholder="Type your Message...." >
+                        </div>
+                        <button class="send-btn">Send</button>
+                 </form>
+             </div>
+     
+     
+        </div>
+    </div>
+     <!-- footer -->
+     <div class="footer" id="footer">
+        <div class="top-footer">
+            <div class="box-1">
+                <img src="/footer_logo.png" alt="img"  data-aos="flip-up">
+                <p>KnowledgeHub is founded by a small team of engineer in 2024, who had the dream of digitalizing study
+                    material for University students. Regular course, we aim to add all universities of India.</p>
+            </div>
+            <div class="box-2">
+                <h1>Other Links</h1>
+                <div class="line"></div>
+                <ul>
+                    <a href="/contact.html"><li>Contact Us</li></a>
+                   <a href="/index.html#home"> <li>About Us</li></a>
+                    <a href="/index.html#contributer"><li>Contributors</li></a>
+                   <a href="/index.html#down"> <li>Download</li></a>
+                </ul>
+            </div>
+            <div class="box-3">
+                <h1>Important Links</h1>
+                <div class="line"></div>
+                <ul>
+                    <li>Upload</li>
+                    <li>Datesheets</li>
+                   <a href="/index.html#list"> <li>Institution lists</li></a>
+                    <li>Syllabus</li>
+                </ul>
+            </div>
+            <div class="box-4">
+                <h1>Contact Us</h1>
+                <div class="line"></div>
+                <i class="fa-regular fa-envelope" style="color: #0a438e;"></i>
+                <a href="#">
+                    <p>helpknowledgehub@gmail.com</p>
+                </a>
+                <div class="soc-icon" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
+                    <i class="fa-brands fa-facebook" style="color: #0a438e;"></i>
+                    <i class="fa-brands fa-instagram" style="color: #0a438e;"></i>
+                    <i class="fa-solid fa-x" style="color: #0a438e;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="left">Copyright ©2024 KnowledgeHub. All Rights Reserved</div>
+            <div class="right">
+                <pre>Support | Disclaimer | Privacy Policy </pre>
+            </div>
+        </div>
+    </div>
+    <!-- end footer -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        $(document).ready(function () {
+            if (window.innerWidth < 767) {
+                $("#faMenu").click(function () {
+                    $("#dropdown").slideToggle();
+                })
+                $("#dropdown li").click(function () {
+                    $("#dropdown").slideUp();
+                })
+            }
+        })
+    </script>     
+</body>
+</html>
