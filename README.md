@@ -1,4 +1,6 @@
-<img src="homeimg.png" width="500"/>
+<p align="center">
+  <img src="homeimg.png" width="500"/>
+</p>
 #KnowledgeHub ( Smart Education ) 
 > KnowledgeHub is founded by a small team of engineer in 2024, who had the dream of digitalizing study material for University students. Regular course, we aim to add all universities of India.
 >
